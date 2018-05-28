@@ -1,9 +1,13 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react'
 
-export default class App extends Component {
+import BookList from '../containers/book-list'
+
+export default class App extends PureComponent {
   render() {
     return (
-      <div>React simple starter</div>
-    );
+      <div>
+        <BookList />
+      </div>
+    )
   }
 }
